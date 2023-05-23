@@ -1,14 +1,26 @@
 
-
+const isTesting = false;
 
 //1.
 let jourDeSemaine = "Nous sommes un jour de semaine";
 let jourDeWeekend = "Nous sommes un jour de weekend";
 
+let myDate = null;
+
+
+
 //2.
-const myDate = new Date(2023, 4, 22, 5, 0, 0);
-const day = myDate.getDay();
-const time = myDate.getHours();
+if (isTesting == true){
+    myDate = new Date(prompt("Date: YYYY, MM, DD, HH, MM, SS"));
+}
+else {
+
+    myDate = new Date();
+    let date = myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+}
+
+let day = myDate.getDay();
+let time = myDate.getHours();
 
 console.log("day", day);
 console.log("time:",time);
@@ -39,6 +51,18 @@ else if (day == 1 && time<9){
     console.log(jourDeWeekend);
 }*/
 
+
+/*
+isTesting
+if (isTesting == true){
+    myDate = new Date(prompt("Date: YYYY, MM, DD, HH, MM, SS"));
+}
+else {
+
+    myDate = new Date();
+    let date = myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+}
+*/
 
 
 
