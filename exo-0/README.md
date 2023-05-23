@@ -27,3 +27,5 @@ Décommenter la ligne puis recharger la page.
 ```
 
 Que se passe-t-il et pourquoi ?
+
+//Il ne trouve pas la variable "myVariable" donc une erreur est envoyé dans la console
