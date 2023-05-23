@@ -5,50 +5,50 @@
     </head>
     <body>
 
-        <h1>Exercice 0</h1>
+        <h1>Exercice 0</h1> 
 
-        <script type="text/javascript">
+        <script type="text/javascript"> //le type de script appelé est du javascript 
 
         /* Section 1 */   
 
-        var name = "Joe";
-        var city = 'London';
-        var age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+        var name = "Joe"; //variable nommée "name" qui prend pour valeur le string "Joe"
+        var city = 'London'; //variable nommée "city" qui prend pour valeur le string "London"
+        var age = 32; //variable nommée "age" qui prend pour valeur l'entier "32"
+        var isRed = true; //variable boolean nommée "isRed" qui prend pour valeur "true"
+        var isOld = age > 80; //variable boolean nommée "isOld" qui prend pour valeur "true" ou "false" selon si la variable "age" est supérieur à "80" ("true") ou non ("false")
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; //variable nommée "previousJobs" qui prend comme valeur des strings dans un tableau: lawyer', 'developper' et 'Professionnal climber'
 
-        function info(height, weight) {
-            if (height > 180) {
-                console.log('Vous êtes grand');
+        function info(height, weight) { //fonction nommée "info" qui prend comme parametres les variables "height" et "weight"
+            if (height > 180) { //si la variable "height" est supérieur à 180
+                console.log('Vous êtes grand'); //si la condition est remplie montrer le string "vous êtes grand"
             }
-            if (weight < 0) {
-                console.log('oups, there is a problem');
-            } else if ( weight < 15) {
-                console.log('Are you that slim ?')
-            } else {
-                console.log('Good !')
+            if (weight < 0) { //si la variable "weight" est inférieur à 0
+                console.log('oups, there is a problem'); //si la condition est remplie montrer le string "oups, there is a problem"
+            } else if ( weight < 15) { //sinon si la variable "weight" est inférieur à 15
+                console.log('Are you that slim ?') //si la condition est remplie montrer "are you that slim"
+            } else { //sinon si toutes les autres conditions ne sont pas remplies 
+                console.log('Good !') //montrer "good!"
             }
         }
 
-        info(165, 45);
+        info(165, 45); //fonction appelléé "info" qui prend comme parametres les variables entiers "165" et "45"
 
-        var myHeight = 175;
-        var myWeight = 86;
+        var myHeight = 175; //variable appellée "myHeight" qui prend comme valeur l'entier 175
+        var myWeight = 86; //variable appellée "myWeight" qui prend comme valeur l'entier 86
 
-        info(myHeight, myWeight);
+        info(myHeight, myWeight); //fonction appelléé "info" qui prend comme parametres les variables myHeight et myWeight
 
-        info(myHeight + 15, myWeight - 100);
+        info(myHeight + 15, myWeight - 100); //fonction appelléé "info" qui prend comme parametres les variables myHeight + 15 et myWeight - 100
 
-        function toUpper(variable) {
-            return variable.toUpperCase();
+        function toUpper(variable) { //fonction appellée "toUpper" qui prend comme paramètre la variable appellée "variable"
+            return variable.toUpperCase(); //retourne la valeur de la variable appellée "variable"
         }
 
-        var upperName = toUpper(name);
+        var upperName = toUpper(name); //variable "upperName" prend la valeur de la variable "toUpper" qui prend comme paramètre la variable "name"
 
-        for (i = 0; i < 3; i = i + 1) {
-            console.log(previousJobs[i]);
+        for (i = 0; i < 3; i = i + 1) { //une boucle ou la variable "i" est initialisé à "0". Tant que i est inférieur à 3, i s'incrémente de 1
+            console.log(previousJobs[i]); //montrer la valeur de la case "i" dans le tableau de la variable "previousJobs"
         }
 
         /* Section 2: */
