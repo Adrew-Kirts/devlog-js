@@ -2,7 +2,7 @@
 console.log('exo-3');
 
 let playerInput = prompt("Your choice (rock, paper, scissors) ?");
-let choices = ["rock", "paper", "scissors"];
+let choices = ["rock", "paper", "scissors", "bomb"];
 
 
 function getPlayerChoice(playerInput) {
@@ -25,7 +25,10 @@ function getComputerChoice() {
 
 function findWinner(playerChoice, computerChoice) {
     console.log("Result:")
-    if (playerChoice == computerChoice) {
+    if (playerChoice == "bomb"){
+        console.log("Won - cheater!");
+    }
+    else if (playerChoice == computerChoice) {
         console.log("Tied");
     }
     else if (playerChoice == "rock" && computerChoice == "scissors") {
