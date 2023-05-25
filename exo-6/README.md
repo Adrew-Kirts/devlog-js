@@ -18,8 +18,8 @@ Nous avons besoin dans un premier temps d'une structure de données permettant d
 
 ```js
 {
-    firstName: “Pablo”,
-    lastName:”Sanchez”,
+    firstName: "Pablo",
+    lastName: "Sanchez”,
     age: 11
 }
 ```
