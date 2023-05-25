@@ -35,4 +35,4 @@ Pour faire cette traduction, nous allons utiliser des boucles.
 
 8. En affichant la valeur de `resultArray`, on observe qu'il y a des virgules entre chaque élément. Utiliser les méthodes `join()` et `toUpperCase()` pour un bon formatage.
 
-9. Lancer votre programme, chanter la traduction et être heureux de tout ce que vous êtes parvenu à faire jusqu'alors !
+9. Lancer votre programme, chanter la traduction et soyez heureux de tout ce que vous êtes parvenu à faire jusqu'alors !

@@ -2,13 +2,16 @@
 
 console.log('exo-5');
 
-let input = "phrase to translate";
+let input = "Hello big whales, how are you?";
 
 let vowels = ["a", "e", "i", "o", "u"];
 
 let resultArray = [];
 
-for (var i = 0; i < input.length; i++) {
-    console.log(input.charAt(i));
+for (let i = 0; i < input.length; i++) {
+  console.log(input.charAt(i));
+  if (vowels.includes(input[i])) {
+    resultArray.push(input[i]);
   }
-  
+}
+console.log(resultArray.join('').toLocaleUpperCase());
