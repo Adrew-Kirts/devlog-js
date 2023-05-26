@@ -10,7 +10,7 @@ let translateType = {
 
 for (let i = 0; i < jsonDatas.length; i++) {
   jsonDatas[i].translatedType = translateType[jsonDatas[i].type];
-  console.log(jsonDatas[i]);
+  //console.log(jsonDatas[i]);
   var mainContainer = document.getElementById("myData");
   let div = document.createElement("div");
   div.innerHTML =
@@ -82,6 +82,5 @@ function filterJson() {
     obj.translatedType = translateType[obj.type];
   });
 
-  // Display the filtered values
   displayFilteredValues(filteredValues);
 }
